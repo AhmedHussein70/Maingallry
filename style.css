@@ -1,0 +1,83 @@
+body {
+  /* background-color:rgba(255, 99, 71, 0.776); */
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;padding: 0;
+  font-family: sans-serif;
+}
+#page{
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.parent-Btn{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap ;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  padding: 5px 10px;
+  border-radius: .4rem;
+  margin: .3vw;
+  font-size: .9rem;
+  text-transform: capitalize;
+}
+/* button:active{
+  background-color: #203a43;
+  color: #fff;
+} */
+button.active{
+  background-color: #203a43;
+  color: #fff;
+  box-shadow: 0 0 20px 1px  rgba(255, 255, 255, 0.292);
+}
+.images{
+  margin-top: 4rem;
+width:100% ;
+display: flex;
+flex-wrap: wrap;
+
+}
+.images .itemBox{
+width: calc(100%/3);
+padding: .4rem;
+/* height: 200px; */
+object-fit: contain;
+}
+.images .itemBox.hide{
+  display: none;
+}
+.images .itemBox.activr{
+  display: block;
+}
+.images .itemBox img{
+  width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+}
+
+.images .itemBox:hover img{
+  opacity: .7;
+}
